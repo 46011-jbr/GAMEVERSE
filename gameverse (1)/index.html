@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GAMEVERSE — Descubra seu próximo jogo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="#">GAMEVERSE</a>
+  <nav id="nv" aria-label="Categorias"></nav>
+  <input id="q" type="search" placeholder="Buscar jogo pelo nome…" aria-label="Buscar jogo pelo nome">
+</header>
+
+<main>
+  <div class="hero">
+    <div>
+      <h1>DESCUBRA SEU <span>PRÓXIMO JOGO</span></h1>
+      <p>Jogos reais que rodam direto no Chrome, sem instalar nada, organizados por gênero. Escolha um, veja os detalhes e comece a jogar em segundos.</p>
+      <div class="row"><button class="btn" data-cat="all">EXPLORAR JOGOS</button><button class="btn o" data-go="categorias">VER CATEGORIAS</button></div>
+    </div>
+    <div id="hf"></div>
+  </div>
+  <section><h2>Em destaque</h2><div class="grid" id="dest"></div></section>
+  <section id="categorias"><h2>Todas as categorias</h2><div class="cats" id="cs"></div></section>
+  <section><h2>Mais populares</h2><div class="grid" id="pop"></div></section>
+  <section><h2>Lançamentos mais recentes do catálogo</h2><div class="grid" id="new"></div></section>
+  <section id="catalogo">
+    <h2>Catálogo <small class="mu" id="cn" style="font:400 14px Inter,system-ui,sans-serif"></small></h2>
+    <div class="fl" id="fl"></div>
+    <div id="cb" hidden></div>
+    <div class="grid" id="cat"></div>
+  </section>
+</main>
+
+<footer>GAMEVERSE é um catálogo independente. Marcas e imagens pertencem aos seus respectivos donos; os botões levam a sites oficiais ou às páginas onde cada jogo roda. Todos funcionam no navegador e são gratuitos (alguns têm anúncios ou compras opcionais); a oferta pode mudar, então confirme na página do jogo.</footer>
+<div id="md" aria-modal="true" role="dialog"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
